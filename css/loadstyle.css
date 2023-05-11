@@ -2,9 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'FF Mark W05', sans-serif;
-    background: black;
     color: white;
     transition: 5s;
+    animation: starting 5s;
 }
 
 .center {
@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: black;
 }
 
 .ring {
@@ -67,5 +68,15 @@ span {
 @keyframes text {
     50% {
         color: black;
+    }
+}
+
+@keyframes starting {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
