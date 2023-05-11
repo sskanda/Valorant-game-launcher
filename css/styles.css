@@ -1,0 +1,283 @@
+/* sign in color #300c0c */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'FF Mark W05', sans-serif;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.mastercontainer {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formcontainer {
+    width: 440px;
+    height: 660px;
+    padding-left: 67px;
+    padding-right: 67px;
+    padding-top: 100px;
+    background-color: #f9f9f9;
+    margin-top: 100px;
+}
+
+.logo {
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 170px;
+
+}
+
+.signinlogo {
+    font-size: 2.5rem;
+    /* font-family: 'FF Mark W05', sans-serif; */
+    font-weight: 700;
+    /* color: white; */
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+
+
+.userinput {
+    display: grid;
+    grid-template-columns: auto;
+    /* color: white; */
+    height: 310px;
+}
+
+.username {
+    position: relative;
+    margin-bottom: 15px;
+
+}
+
+.username input {
+
+    width: 100%;
+    height: 80%;
+    background: transparent;
+    border-style: solid;
+    background-color: rgb(223, 222, 222);
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 2em;
+    outline: none;
+}
+
+.username span {
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    left: 30px;
+    top: 20px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.username input:focus {
+    background-color: transparent;
+    border-color: black;
+}
+
+
+.username input:valid~span,
+.username input:focus~span {
+
+    transform: translateX(-20px) translateY(-40px);
+    background-color: transparent;
+
+
+}
+
+.username input:focus+#eye1 {
+    opacity: 1;
+}
+
+#eye1 {
+    position: absolute;
+    left: 390px;
+    top: 20px;
+    font-size: 25px;
+    opacity: 0;
+
+}
+
+/* #eye1 {
+    color: blueviolet;
+} */
+
+.sociallink {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    height: 50px;
+    margin-top: 15px;
+
+    /* position: relative; */
+}
+
+.sbutton {
+    border-radius: 10px;
+    border-color: transparent;
+
+}
+
+.sbutton:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.fb {
+    font-size: 30px;
+    background-color: rgb(28, 28, 235);
+    color: white;
+}
+
+.gmail {
+    background-color: white;
+}
+
+.apple {
+    font-size: 30px;
+    color: white;
+    border-style: solid;
+    background-color: black;
+    border-color: #e8e8e8;
+}
+
+.xbox {
+    font-size: 30px;
+    color: white;
+    background-color: green;
+}
+
+.staysign {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+.rememberme {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+.rememberme input {
+    width: 23px;
+    height: 23px;
+    accent-color: red;
+
+}
+
+.submitbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.submitbutton button {
+    height: 102px;
+    width: 102px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #e8e8e8;
+
+}
+
+.submitbutton button:hover {
+    cursor: pointer;
+}
+
+.rightarrow {
+    font-size: 40px;
+    color: black;
+    pointer-events: none;
+}
+
+.passwordresest {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 100px;
+}
+
+.dummy {
+    text-decoration: none;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    color: black;
+    letter-spacing: 0.08em;
+    margin-top: 30px;
+}
+
+.masterfooter {
+    position: relative;
+    width: 700px;
+    height: 18px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer {
+    position: absolute;
+    text-decoration: none;
+    color: rgba(249, 249, 249, 0.65);
+    letter-spacing: 0.08em;
+    font-weight: 800;
+}
+
+.footer2 {
+    left: 130px
+}
+
+.footer3 {
+    left: 350px;
+}
+
+.dummydata {
+    background: #f0f0f0;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    position: absolute;
+    pointer-events: none;
+    top: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e8e8e8;
+    /* top: -20px;
+    right: -60px; */
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.5s;
+    opacity: 0;
+    /* border: 15px solid; */
+}
+
+/* .dummydata:hover {
+    background-color: red;
+} */
+
+
+.passwordresest div:hover~span {
+
+    transform: translateX(150px) translateY(-45px);
+    opacity: 1;
+}
+
+/* -------------Loading.hmtl--------------- */
