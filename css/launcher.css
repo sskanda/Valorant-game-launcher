@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* animation: starting 5s; */
+}
+
+body {
+    animation: starting 5s;
+}
+
+.background-image {
+    background-image: url(../images/launchscreen.jpg);
+    height: 100vh;
+    width: 100vw;
+
+}
+
+@keyframes starting {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

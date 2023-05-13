@@ -14,8 +14,9 @@ class Login {
             // add any authentication logic here
             if (usernameinput.value == "valorant" && passinput.value == "valorant123") {
                 this.form.submit();
+                window.location.href = "views/loading.html";  //temp fix to encode urls
                 submitbutton.style.background = "red";
-                window.location.href = baseurl + "views/loading.html";  //temp fix to encode urls
+
             }
 
             else
