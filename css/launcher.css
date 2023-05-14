@@ -121,6 +121,9 @@ body {
     display: flex;
     flex-direction: column;
     transition: 0.5s;
+    border-style: solid;
+    border-width: 1px;
+    border-right-color: transparent;
 }
 
 .right-side-bar:hover {
@@ -164,6 +167,7 @@ body {
 
 .headname:hover {
     opacity: 0.5;
+    cursor: pointer;
 }
 
 #name2 {
