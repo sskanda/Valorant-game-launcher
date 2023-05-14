@@ -84,6 +84,12 @@ body {
 
 }
 
+.passerror {
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+
 .username input {
 
     width: 100%;

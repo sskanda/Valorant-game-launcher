@@ -183,3 +183,8 @@ body {
     opacity: 0.5;
     cursor: pointer;
 }
+
+.playerdesc {
+    display: grid;
+    grid-template-rows: 10px 10px;
+}
