@@ -178,3 +178,8 @@ body {
 #profilepic {
     border-radius: 15px;
 }
+
+.addimg:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}

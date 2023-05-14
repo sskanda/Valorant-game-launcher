@@ -9,7 +9,6 @@ const addfriends = document.querySelector('.addfriends');
 
 logout.addEventListener('click', function () {
     window.location.href = "../index.html";
-    console.log("logout clicked");
 })
 
 radianite.addEventListener('mouseover', function () {

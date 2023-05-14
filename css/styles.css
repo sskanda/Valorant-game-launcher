@@ -118,18 +118,19 @@ body {
 
 }
 
-.username input:focus+#eye1 {
+/* .username input:focus+#eye1 {
     opacity: 1;
-    visibility: visible;
-}
+
+
+} */
 
 #eye1 {
     position: absolute;
     left: 390px;
     top: 20px;
     font-size: 25px;
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0; */
+
 
 }
 
@@ -216,6 +217,7 @@ body {
 
 .submitbutton button:hover {
     cursor: pointer;
+    background-color: rgb(255, 71, 71);
 }
 
 .rightarrow {

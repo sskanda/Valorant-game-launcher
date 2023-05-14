@@ -10,12 +10,10 @@ class Login {
         this.form.addEventListener('submit', (e) => {
             e.preventDefault();
             var baseurl = window.location.href;
-            console.log("inside class");
             // add any authentication logic here
             if (usernameinput.value == "valorant" && passinput.value == "valorant123") {
                 this.form.submit();
                 window.location.href = "views/loading.html";  //temp fix to encode urls
-                submitbutton.style.background = "red";
 
             }
 
@@ -36,12 +34,10 @@ const loginform = document.querySelector('.loginform');
 const user = document.querySelectorAll('.user');
 
 
-console.log(window.location.href);
+
 // // eye icon functionality
 eye.addEventListener('click', function (e) {
     e.preventDefault();
-
-    console.log("clicked")
     if (passinput.type == 'password') {
         passinput.type = "text";
         eye.classList.remove('fa-eye-slash');
