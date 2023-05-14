@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'FF Mark W05', sans-serif;
     animation: starting 5s;
+    color: white;
 }
 
 body {
@@ -94,13 +95,20 @@ body {
     height: 30px;
     margin: 10px;
     font-size: 25px;
-    color: black;
+    color: white;
     font-weight: 500;
 }
 
+
+
 .logout:hover {
-    opacity: 0.5;
+    color: rgb(255, 65, 65);
+    /* opacity: 0.5; */
     cursor: pointer;
+}
+
+.logout:hover>.fa-sharp {
+    color: red;
 }
 
 .currency {
