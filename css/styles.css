@@ -298,10 +298,11 @@ body {
 /* .dummydata:hover {
     background-color: red;
 } */
-
+.passwordresest div:hover {
+    cursor: pointer;
+}
 
 .passwordresest div:hover~span {
-
     transform: translateX(150px) translateY(-45px);
     opacity: 1;
     visibility: visible;
