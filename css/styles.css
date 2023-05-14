@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'FF Mark W05', sans-serif;
+    animation: starting 2s;
 }
 
 body {
@@ -12,7 +13,19 @@ body {
     height: 100vh;
     width: 100vw;
 
+
 }
+
+@keyframes starting {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .mastercontainer {
 
@@ -107,6 +120,7 @@ body {
 
 .username input:focus+#eye1 {
     opacity: 1;
+    visibility: visible;
 }
 
 #eye1 {
@@ -115,6 +129,7 @@ body {
     top: 20px;
     font-size: 25px;
     opacity: 0;
+    visibility: hidden;
 
 }
 
@@ -268,8 +283,10 @@ body {
     font-size: 15px;
     transition: 0.5s;
     opacity: 0;
+    visibility: hidden;
     /* border: 15px solid; */
 }
+
 
 /* .dummydata:hover {
     background-color: red;
@@ -280,6 +297,7 @@ body {
 
     transform: translateX(150px) translateY(-45px);
     opacity: 1;
+    visibility: visible;
 }
 
 /* -------------Loading.hmtl--------------- */
