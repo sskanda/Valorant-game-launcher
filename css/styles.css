@@ -26,7 +26,60 @@ body {
     }
 }
 
+/* new way-------------- */
+.maincontainer {
+    display: flex;
+    /* overflow: hidden; */
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 1.49rem 2.24rem;
+    box-sizing: border-box;
 
+}
+
+.maincontainer>div {
+    flex: 1;
+}
+
+.headercontainer {
+    display: flex;
+    max-height: 120px;
+    height: 100%;
+    /* overflow: hidden; */
+    margin-left: 2rem;
+    margin-bottom: 7rem;
+}
+
+
+
+.midcontainer {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+
+    padding: 6.5rem 4.2rem 4.2rem;
+    padding-bottom: 0;
+    min-height: 40rem;
+    max-height: 700px;
+    background-color: #f9f9f9;
+}
+
+.bottomcontainer {
+    margin-top: 3rem;
+    ;
+    max-height: 80px;
+    height: 100%;
+}
+
+/* old way ----------------------- */
 .mastercontainer {
 
     height: 100vh;
@@ -38,20 +91,21 @@ body {
 }
 
 .formcontainer {
-    width: 440px;
-    height: 660px;
-    padding-left: 67px;
+    box-sizing: border-box;
+    width: 25.437677689660333rem;
+    min-height: 31.021558158122353rem;
+    /* padding-left: 67px;
     padding-right: 67px;
-    padding-top: 100px;
+    padding-top: 100px; */
     background-color: #f9f9f9;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
-    margin-top: 40px;
-    margin-left: 170px;
+    /* margin-top: 40px; */
+    margin-left: 100px;
 
 }
 
