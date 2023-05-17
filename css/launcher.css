@@ -82,12 +82,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    /* grid-template-columns: 1fr 1fr; */
-    /* position: absolute; */
-    /* right: 0; */
-    /* margin-left: 50%; */
-    /* justify-items: center;
-    align-items: center; */
+
 }
 
 .top-bar>div {
