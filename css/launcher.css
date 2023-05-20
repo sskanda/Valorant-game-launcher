@@ -15,6 +15,10 @@ body {
 }
 
 
+html {
+    font-size: 0.52115905774vw;
+}
+
 
 @keyframes starting {
     0% {
@@ -33,8 +37,8 @@ body {
 .left-side-navigation {
     display: flex;
     align-items: center;
-    margin-left: 50px;
-    width: 300px;
+    margin-left: 5rem;
+    width: 30rem;
     height: 100vh;
     background-color: transparent;
     list-style: none;
@@ -52,13 +56,13 @@ body {
 }
 
 .left-side-navigation li:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .left-side-navigation li::before {
     text-align: center;
 
-    margin-right: 20px;
+    margin-right: 2rem;
     content: "\25C6";
 }
 
@@ -68,12 +72,12 @@ body {
     font-weight: 600;
     letter-spacing: -0.08em;
     color: white;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 .left-side-navigation a:hover {
     color: red;
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     /* margin-left: 20px; */
     transition: 0.2s;
 }
@@ -86,10 +90,10 @@ body {
 }
 
 .top-bar>div {
-    width: 150px;
-    height: 30px;
-    margin: 10px;
-    font-size: 25px;
+    width: 15rem;
+    height: 3rem;
+    margin: 1rem;
+    font-size: 2.5rem;
     color: white;
     font-weight: 500;
 }
@@ -107,7 +111,7 @@ body {
 }
 
 .currency {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 525;
 }
 
@@ -115,8 +119,8 @@ body {
 
 .right-side-bar {
     position: absolute;
-    height: 100%;
-    width: 83px;
+    height: 100vh;
+    width: 8.3rem;
     top: 0;
     right: 0;
     background: hsl(0 0% 100% /0.1);
@@ -130,7 +134,7 @@ body {
 }
 
 .right-side-bar:hover {
-    width: 300px;
+    width: 30rem;
 }
 
 .right-side-bar:hover~.addfriends span {
@@ -143,15 +147,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: auto;
-    margin-bottom: 90px;
+    margin-bottom: 9rem;
     justify-items: center;
     /* transition: 0.5s; */
 }
 
 .headname {
     display: grid;
-    grid-template-columns: 80px 1fr;
-    height: 80px;
+    grid-template-columns: 8rem 1fr;
+    height: 8rem;
     backdrop-filter: blur(40rem);
 }
 
@@ -164,7 +168,7 @@ body {
     color: black;
     /* color: rgb(173, 238, 74); */
     margin-top: 10%;
-    margin-left: 5px;
+    margin-left: 0.5rem;
     font-weight: 700;
 }
 
@@ -173,13 +177,21 @@ body {
     cursor: pointer;
 }
 
+#name1 {
+    font-size: 1.5rem;
+}
+
 #name2 {
-    font-size: 12px;
+    font-size: 1.2rem;
     color: green;
 }
 
 #profilepic {
-    border-radius: 15px;
+    border-radius: 1.5rem;
+}
+
+.addimg {
+    font-size: 1.5rem;
 }
 
 .addimg:hover {
@@ -189,5 +201,5 @@ body {
 
 .playerdesc {
     display: grid;
-    grid-template-rows: 10px 10px;
+    grid-template-rows: 1rem 1rem;
 }

@@ -4,15 +4,22 @@ const logout = document.querySelector('.logout');
 const radianite = document.querySelector('.coins');
 const rightsidebar = document.querySelector('.right-side-bar');
 const addfriends = document.querySelector('.addfriends');
-const profilename = document.querySelector('.name');
+const profilename = document.querySelector('#name1');
 
 
 onload = () => {
-    var name = localStorage.getItem("profilename")
-    if (name != null && name != "")
-        profilename.textContent = name;
-    else
-        profilename.textContent = "Player One";
+    if (sessionStorage.getItem("profilename") != null) {
+        var name = sessionStorage.getItem("profilename")
+        if (name != null && name != "")
+            profilename.textContent = name;
+        else
+            profilename.textContent = "Player One";
+    }
+    else {
+        alert("Not an authorized User. Please Sign-In");
+        window.location.href = "../index.html";
+    }
+
 }
 logout.addEventListener('click', function () {
     window.location.href = "../index.html";

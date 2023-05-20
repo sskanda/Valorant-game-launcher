@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../title.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/store.css">
+    <title>Store</title>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="goback">
+            <i class="fa-solid fa-backward"></i>
+            Back
+        </div>
+        <div class="coins">
+            <i class="fa-regular fa-registered"></i>
+            <span class="currency">279,634</span>
+        </div>
+        <div class="logout">
+            Logout <i class="fa-sharp fa-solid fa-right-from-bracket"></i>
+        </div>
+    </div>
+    <div class="maincontainer">
+        <div class="container">
+
+
+            <input type="radio" name="slider" class="d-none" id="s1" checked>
+            <input type="radio" name="slider" class="d-none" id="s2">
+            <input type="radio" name="slider" class="d-none" id="s3">
+            <input type="radio" name="slider" class="d-none" id="s4">
+            <input type="radio" name="slider" class="d-none" id="s5">
+
+            <div class="cards">
+                <label for="s1" id="slide1">
+                    <div class="card">
+                        <div class="image">
+                            <img src="../images/weapon1.png" alt="">
+
+                        </div>
+                        <div class="infos">
+                            <span class="name">Elderflame Vandal</span>
+                            <span class="weapondesc">Upgradable skin from the store that is purchasable in-game. The
+                                skin for each of the weapons, including Vandal has some
+                                unique visual finish or animation effects, but it does not affect the gameplay.</span>
+                        </div>
+                        <a href="#" class="btn-pay">Rs 4499</a>
+                        <div class="socials">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s2" id="slide2">
+                    <div class="card">
+                        <div class="image">
+                            <img src="../images/weapon2.png" alt="">
+
+                        </div>
+                        <div class="infos">
+                            <span class="name">GlitchPop Vandal</span>
+                            <span class="weapondesc">The Glitchpop Collection is a collection of cosmetics in VALORANT.
+                                The contents of each of its bundles have been available to be obtained when they have
+                                been released in the Store for a limited time.</span>
+                        </div>
+                        <a href="#" class="btn-pay">Rs 3199</a>
+                        <div class="socials">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s3" id="slide3">
+                    <div class="card">
+                        <div class="image">
+                            <img src="../images/weapon3.png" alt="">
+
+                        </div>
+                        <div class="infos">
+                            <span class="name">Reaver Vandal</span>
+                            <span class="weapondesc">Reaver has a very long history with VALORANT, dating all the way
+                                back to 2018. Reaver was one of the first skins the team developed when we were still
+                                trying to figure out what skins in VALORANT should be. </span>
+                        </div>
+                        <a href="#" class="btn-pay">Rs 2999</a>
+                        <div class="socials">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s4" id="slide4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="../images/weapon4.png" alt="">
+
+                        </div>
+                        <div class="infos">
+                            <span class="name">Prime Vandal</span>
+                            <span class="weapondesc">The Prime Vandal skin is part of the Vandal weapons skin collection
+                                released at launch on June 2nd 2020, it leans heavily on gold plating much like the
+                                aristocrat collection. The purple and gold hint at royalty or ancient Rome, though the
+                                excessive use of gold may suggest an Aztec inspiration.</span>
+                        </div>
+                        <a href="#" class="btn-pay">Rs 2599</a>
+                        <div class="socials">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s5" id="slide5">
+                    <div class="card">
+                        <div class="image">
+                            <img src="../images/weapon5.png" alt="">
+
+                        </div>
+                        <div class="infos">
+                            <span class="name">Prism-II Vandal</span>
+                            <span class="weapondesc">Non-upgradable skin from the store that is purchasable in-game. The
+                                skin for each of the weapons, including Vandal has some unique
+                                visual finish or animation effects, but it does not affect the gameplay.</span>
+                        </div>
+                        <a href="#" class="btn-pay">Rs 1999</a>
+                        <div class="socials">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+        </div>
+        <div class="right-side-bar">
+            <div class="headname">
+                <img id="profilepic" src="../images/profile3.png" alt="profile">
+                <div class="playerdesc">
+                    <span id="name1">Player 1 </span>
+                    <span id="name2"><br>Available </span>
+                </div>
+            </div>
+            <div class="addfriends">
+                <div class="add"><i class="addimg fa-solid fa-user-plus"></i></div>
+                <div class="search"><i class="addimg fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/launcher.js"></script>
+    <script src="../js/store.js"></script>
+</body>
+
+</html>

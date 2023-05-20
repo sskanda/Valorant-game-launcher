@@ -10,7 +10,7 @@ class Login {
         this.form.addEventListener('submit', (e) => {
             e.preventDefault();
             var name = usernameinput.value
-            localStorage.setItem("profilename", name);
+            sessionStorage.setItem("profilename", name);
             var baseurl = window.location.href;
             // add any authentication logic here
             if (passinput.value.length < 8) {
