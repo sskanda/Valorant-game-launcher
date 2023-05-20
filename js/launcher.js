@@ -23,6 +23,7 @@ onload = () => {
 }
 logout.addEventListener('click', function () {
     window.location.href = "../index.html";
+    sessionStorage.removeItem("profilename");
 })
 
 radianite.addEventListener('mouseover', function () {
