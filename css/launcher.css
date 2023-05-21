@@ -38,7 +38,7 @@ html {
     display: flex;
     align-items: center;
     margin-left: 5rem;
-    width: 30rem;
+    width: 37rem;
     height: 100vh;
     background-color: transparent;
     list-style: none;
@@ -202,6 +202,11 @@ html {
 .playerdesc {
     display: grid;
     grid-template-rows: 1rem 1rem;
+}
+
+#storelink {
+    margin-left: 1rem;
+    font-size: 1.5rem;
 }
 
 @media (max-width:900px) {
