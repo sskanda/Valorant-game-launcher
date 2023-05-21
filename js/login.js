@@ -27,7 +27,7 @@ class Login {
             }
             else {
                 this.form.submit();
-                window.location.href = "views/loading.html";  //temp fix to encode urls
+                window.location.href = "views/loading";  //temp fix to encode urls
             }
 
 

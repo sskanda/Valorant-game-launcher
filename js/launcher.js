@@ -17,12 +17,12 @@ onload = () => {
     }
     else {
         alert("Not an authorized User. Please Sign-In");
-        window.location.href = "../index.html";
+        window.location.href = "/";
     }
 
 }
 logout.addEventListener('click', function () {
-    window.location.href = "../index.html";
+    window.location.href = "/";
     sessionStorage.removeItem("profilename");
 })
 

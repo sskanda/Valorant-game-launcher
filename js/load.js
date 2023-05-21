@@ -2,6 +2,6 @@
 
 function redirect() {
 
-    window.location.href = "launcher.html";
+    window.location.href = "../launcher";
 }
 setInterval('redirect()', 10000);

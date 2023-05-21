@@ -15,7 +15,7 @@ onload = () => {
     }
     else {
         alert("Not an authorized User. Please Sign-In");
-        window.location.href = "../index.html";
+        window.location.href = "/";
     }
 
 }
@@ -39,5 +39,5 @@ var swiper = new Swiper(".mySwiper", {
 
 backbutton.addEventListener('click', function () {
     console.log("clicked?");
-    window.location.href = "../views/launcher.html";
+    window.location.href = "/views/launcher";
 })

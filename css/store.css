@@ -9,7 +9,7 @@
 body {
 
     position: relative;
-    background-image: url(../images/launchscreen.jpg);
+    background-image: url(/images/launchscreen.jpg);
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -364,4 +364,10 @@ html {
     transform: translate3d(70%, 0, -22rem);
     --current-color1: white;
     --current-color2: #404457;
+}
+
+@media (max-width:900px) {
+    html {
+        font-size: 10px;
+    }
 }
