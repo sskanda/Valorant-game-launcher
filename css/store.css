@@ -366,8 +366,13 @@ html {
     --current-color2: #404457;
 }
 
-@media (max-width:900px) {
+.payment {
+    padding-top: 5rem;
+    width: 100%;
+}
+
+@media (max-width:1000px) {
     html {
-        font-size: 10px;
+        font-size: 7px;
     }
 }

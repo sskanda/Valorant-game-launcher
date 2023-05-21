@@ -4,6 +4,7 @@
 // const profilename = document.querySelector('#name1');
 const paybutton = document.querySelectorAll('.btn-pay');
 const backbutton = document.querySelector('.goback');
+const payment = document.querySelectorAll('.payment');
 
 onload = () => {
     if (sessionStorage.getItem("profilename") != null) {
@@ -38,6 +39,35 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 backbutton.addEventListener('click', function () {
-    console.log("clicked?");
     window.location.href = "/views/launcher";
 })
+
+
+//paypal
+for (let i = 1; i <= payment.length; i++) {
+    paypal.Buttons({
+        // Order is created on the server and the order id is returned
+        createOrder: function (data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '1'
+                    }
+                }]
+            })
+        },
+        onApprove: function (data, actions) {
+            return actions.order.capture().then(function (details) {
+                alert("Payment Successful");
+            })
+        },
+        onError: function (err) {
+            alert("OOPs!! Something went wrong");
+        }
+    }).render(`#btn-${i}`);
+
+
+
+}
+
+
