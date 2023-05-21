@@ -222,7 +222,8 @@ html {
 
     position: relative;
     height: 100%;
-    background-color: #323444;
+    background: rgb(0, 0, 0);
+
     border-radius: 1rem;
     padding: 3rem 3.5rem;
 }
@@ -236,7 +237,7 @@ html {
 .card .image img {
 
     border-radius: 5px;
-    box-shadow: 1.5rem 1.5rem 4rem rgba(0, 0, 0, 50%);
+    box-shadow: 1.5rem 1rem 4rem rgba(85, 85, 85, 0.5);
     margin-top: 2.3rem;
     width: 97%;
 
