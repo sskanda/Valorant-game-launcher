@@ -10,8 +10,8 @@ body {
 
     position: relative;
     background-image: url(/images/launchscreen.jpg);
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -29,6 +29,7 @@ input {
 
 html {
     font-size: 0.52115905774vw;
+    overflow-x: hidden;
 }
 
 

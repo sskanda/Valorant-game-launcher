@@ -17,6 +17,8 @@ body {
 
 html {
     font-size: 0.52115905774vw;
+    overflow-x: hidden;
+
 }
 
 
