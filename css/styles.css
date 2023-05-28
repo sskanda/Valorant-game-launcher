@@ -284,12 +284,12 @@ body {
 
 .dummy {
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 750;
     position: absolute;
     top: 2rem;
-    color: black;
-    font-size: 1.8rem;
-    letter-spacing: 0.08em;
+    color: #666;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
     margin-top: 3rem;
 }
 
