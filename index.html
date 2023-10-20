@@ -1,96 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
-    <link rel="shortcut icon" href="title.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="title.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
+  <body>
     <!-- new way--- -->
     <div class="maincontainer">
-        <div class="headercontainer">
-            <img src="images/riotlogo5.svg" alt="Riot Logo" class="logo">
-        </div>
-        <div class="midcontainer">
-            <form action="views/loading" class="loginform">
-                <div class="formheader">
-                    <p class="signinlogo">Sign In</p>
-                </div>
-                <div class="forminput">
-                    <div class="userinput">
-                        <div class="username">
-                            <input class="user usernameinput" type="text" name="username" required="required">
-                            <span>USERNAME</span>
-                        </div>
-                        <div class="username">
-                            <input class="user passinput" type="password" name="password" required="required">
+      <div class="headercontainer">
+        <img src="images/riotlogo5.svg" alt="Riot Logo" class="logo" />
+      </div>
+      <div class="midcontainer">
+        <form action="views/loading" class="loginform">
+          <div class="formheader">
+            <p class="signinlogo">Sign In</p>
+          </div>
+          <div class="forminput">
+            <div class="userinput">
+              <div class="username">
+                <input
+                  class="user usernameinput"
+                  type="text"
+                  name="username"
+                  required="required"
+                />
+                <span>USERNAME</span>
+              </div>
+              <div class="username">
+                <input
+                  class="user passinput"
+                  type="password"
+                  name="password"
+                  required="required"
+                />
 
-                            <i id="eye1" class="fa-sharp fa-solid fa-eye-slash"></i>
+                <i id="eye1" class="fa-sharp fa-solid fa-eye-slash"></i>
 
-
-                            <span class="input">PASSWORD</span>
-                            <p class="passerror"> </p>
-                        </div>
-                        <div class="sociallink">
-                            <button class="sbutton fb" type="reset">
-                                <span><i class="fa-brands fa-facebook"></i></span>
-                            </button>
-                            <button class="sbutton gmail" type="reset">
-                                <img src="images/google.png" alt="Gmail">
-                            </button>
-                            <button class="sbutton apple" type="reset">
-                                <span><i class="fa-brands fa-apple"></i></span>
-                            </button>
-                            <button class="sbutton xbox" type="reset">
-                                <span><i class="fa-brands fa-xbox"></i></span>
-                            </button>
-                        </div>
-                        <div class="rememberme">
-                            <input type="checkbox">
-                            <span class="staysign">Stay signed in</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="formsubmit">
-                    <div class="submitbutton">
-                        <button class="submit" type="submit">
-                            <span class="rightarrow">&#8594;</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="formadmincreds">
-                    <div class="passwordresest">
-                        <div class="dummy">CAN'T SIGN IN?</div>
-                        <div class="dummy"><br>TRY THESE OUT!</div>
-                        <span class="dummydata" id="iddummydata">
-                            USERNAME : valorant<br>PASSWORD : valorant123!
-                        </span>
-
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="bottomcontainer">
-            <div class="masterfooter">
-                <a href="https://support.riotgames.com/hc/en-us" target="_blank" class="footer footer1">SUPPORT</a>
-                <a href="https://www.riotgames.com/en/privacy-notice" target="_blank" class="footer footer2">PRIVACY
-                    NOTICE</a>
-                <a href="https://www.riotgames.com/en/terms-of-service" target="_blank" class="footer footer3">TERMS OF
-                    SERVICE</a>
+                <span class="input">PASSWORD</span>
+                <p class="passerror"></p>
+              </div>
+              <div class="sociallink">
+                <button class="sbutton fb" type="reset">
+                  <span><i class="fa-brands fa-facebook"></i></span>
+                </button>
+                <button class="sbutton gmail" type="reset">
+                  <img src="images/google.png" alt="Gmail" />
+                </button>
+                <button class="sbutton apple" type="reset">
+                  <span><i class="fa-brands fa-apple"></i></span>
+                </button>
+                <button class="sbutton xbox" type="reset">
+                  <span><i class="fa-brands fa-xbox"></i></span>
+                </button>
+              </div>
+              <div class="rememberme">
+                <input type="checkbox" />
+                <span class="staysign">Stay signed in</span>
+              </div>
             </div>
+          </div>
+          <div class="formsubmit">
+            <div class="submitbutton">
+              <button class="submit" type="submit">
+                <span class="rightarrow">&#8594;</span>
+              </button>
+            </div>
+          </div>
+          <div class="formadmincreds">
+            <div class="passwordresest">
+              <div class="dummy">HOVER HERE</div>
+              <div class="dummy"><br />TRY THESE OUT!</div>
+              <span class="dummydata" id="iddummydata">
+                USERNAME : valorant<br />PASSWORD : valorant123!
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="bottomcontainer">
+        <div class="masterfooter">
+          <a
+            href="https://support.riotgames.com/hc/en-us"
+            target="_blank"
+            class="footer footer1"
+            >SUPPORT</a
+          >
+          <a
+            href="https://www.riotgames.com/en/privacy-notice"
+            target="_blank"
+            class="footer footer2"
+            >PRIVACY NOTICE</a
+          >
+          <a
+            href="https://www.riotgames.com/en/terms-of-service"
+            target="_blank"
+            class="footer footer3"
+            >TERMS OF SERVICE</a
+          >
         </div>
+      </div>
     </div>
     <script src="js/login.js"></script>
-</body>
-
+  </body>
 </html>
