@@ -1,7 +1,6 @@
 # Valorant Game Simulator
 This is an app built to provide a platform to players to login and to connect with the community and also to buy their favorite in-game skins.
 The live site can be found here : https://valo-gg.netlify.app/
-![valo-gg](https://github.com/sskanda/Valorant-game-launcher/assets/57634365/64055eef-92fc-45c5-8ec7-fd7549b09417)
 
 ## Preview
 ![image](https://github.com/sskanda/Valorant-game-launcher/assets/57634365/6eb75f56-d6ec-43d2-8e80-c495d6964756)
